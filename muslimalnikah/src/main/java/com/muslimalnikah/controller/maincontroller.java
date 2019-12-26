@@ -20,7 +20,7 @@ import com.muslimalnikah.model.MemberDetailModel;
 import com.muslimalnikah.model.RegisterUser;
 import com.muslimalnikah.service.MemberService;
 
-
+//To check Git Commands
 @Controller
 public class maincontroller {
 	@Autowired
