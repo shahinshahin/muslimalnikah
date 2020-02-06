@@ -11,7 +11,7 @@ AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	   protected Class<?>[] getRootConfigClasses() {
-	      return new Class[] { HibernateConfig.class };
+	      return new Class[] { AppConfig.class };
 	   }
 
 	 @Override
@@ -23,4 +23,5 @@ AbstractAnnotationConfigDispatcherServletInitializer {
 protected String[] getServletMappings() {
 return new String[] { "/" };
 }
+
 }

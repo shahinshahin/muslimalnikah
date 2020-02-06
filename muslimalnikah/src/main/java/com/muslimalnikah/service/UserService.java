@@ -1,33 +1,20 @@
 package com.muslimalnikah.service;
 
-import javax.xml.bind.annotation.XmlRootElement;
 
-import org.springframework.stereotype.Service;
 
-@Service
-@XmlRootElement
-public class UserService {
-	public int id;
-	public String name;
-	public String password;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
+import java.util.List;
+
+
+
+import com.muslimalnikah.model.loggingUser;
+
+
+
+public interface UserService {
+	public void addUser(loggingUser p);
+	public void updateUser(loggingUser p);
+	public List<loggingUser> listUsers();
+	public loggingUser getUserById(long id);
+	public void removeUser(int id);
 
 }
